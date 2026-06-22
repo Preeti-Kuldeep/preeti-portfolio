@@ -257,6 +257,89 @@ export default function Home() {
     </div>
   </div>
 </section>
+
+{/* ART HUB Project */}
+<section className="py-24 px-10 bg-white">
+  <div className="max-w-6xl mx-auto">
+
+    <p className="text-blue-600 font-medium">
+      Project Showcase
+    </p>
+
+    <h2 className="text-5xl font-bold text-slate-900 mt-4">
+      ART HUB
+    </h2>
+
+    <p className="mt-8 text-xl text-gray-700 max-w-4xl">
+      A multi-user online marketplace platform that connects
+      artists, buyers, and shopkeepers through a centralized
+      system for artwork discovery, management, and purchasing.
+    </p>
+
+    <div className="flex flex-wrap gap-3 mt-10">
+      <span className="bg-slate-200 px-4 py-2 rounded-full">
+        Django
+      </span>
+
+      <span className="bg-slate-200 px-4 py-2 rounded-full">
+        MySQL
+      </span>
+
+      <span className="bg-slate-200 px-4 py-2 rounded-full">
+        HTML
+      </span>
+
+      <span className="bg-slate-200 px-4 py-2 rounded-full">
+        CSS
+      </span>
+
+      <span className="bg-slate-200 px-4 py-2 rounded-full">
+        JavaScript
+      </span>
+    </div>
+
+    <div className="grid md:grid-cols-2 gap-8 mt-16">
+
+      <div className="bg-gray-100 p-8 rounded-xl">
+        <h3 className="text-2xl font-semibold mb-4">
+          Key Features
+        </h3>
+
+        <ul className="space-y-2">
+          <li>✓ User Authentication</li>
+          <li>✓ Product Listings</li>
+          <li>✓ Shopping Cart</li>
+          <li>✓ Artist Profiles</li>
+          <li>✓ Order Management</li>
+          <li>✓ Multi-User Roles</li>
+        </ul>
+      </div>
+
+      <div className="bg-gray-100 p-8 rounded-xl">
+        <h3 className="text-2xl font-semibold mb-4">
+          Project Highlights
+        </h3>
+
+        <ul className="space-y-2">
+          <li>✓ Database Design</li>
+          <li>✓ SQL Query Development</li>
+          <li>✓ Backend Development</li>
+          <li>✓ Frontend Integration</li>
+          <li>✓ CRUD Operations</li>
+          <li>✓ Responsive Design</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div className="mt-12 flex gap-4">
+      <button className="bg-slate-900 text-white px-6 py-3 rounded-lg">
+        Screenshots Coming Soon
+      </button>
+    </div>
+
+  </div>
+</section>
     </main>
   );
 }
