@@ -340,6 +340,102 @@ export default function Home() {
 
   </div>
 </section>
+
+{/* Experience Section */}
+<section className="py-24 px-10 bg-slate-50">
+  <div className="max-w-6xl mx-auto">
+
+    <p className="text-blue-600 font-medium">
+      Professional Experience
+    </p>
+
+    <h2 className="text-5xl font-bold text-slate-900 mt-4">
+      My Journey
+    </h2>
+
+    <div className="mt-16 border-l-4 border-blue-600 pl-8">
+
+      <div className="mb-16">
+        <p className="text-blue-600 font-semibold">
+          Dec 2025 - May 2026
+        </p>
+
+        <h3 className="text-3xl font-bold mt-2">
+          Oracle Apps DBA Trainee
+        </h3>
+
+        <p className="text-xl text-gray-600 mt-2">
+          Cognizant Technology Solutions
+        </p>
+
+        <ul className="mt-6 space-y-3 text-gray-700">
+          <li>
+            ✓ Executed SQL queries for data extraction,
+            validation, and troubleshooting.
+          </li>
+
+          <li>
+            ✓ Supported database monitoring and data
+            integrity validation across Oracle environments.
+          </li>
+
+          <li>
+            ✓ Worked with Oracle utilities including
+            RMAN, Data Pump, and SQL*Loader.
+          </li>
+
+          <li>
+            ✓ Assisted in backup, recovery, and archive
+            log management activities.
+          </li>
+
+          <li>
+            ✓ Created operational documentation and
+            supported issue resolution processes.
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <p className="text-blue-600 font-semibold">
+          2026 - Present
+        </p>
+
+        <h3 className="text-3xl font-bold mt-2">
+          Data Analytics Portfolio Projects
+        </h3>
+
+        <p className="text-xl text-gray-600 mt-2">
+          Self-Driven Learning & Project Development
+        </p>
+
+        <ul className="mt-6 space-y-3 text-gray-700">
+          <li>
+            ✓ Building Customer Churn Analysis &
+            Retention System.
+          </li>
+
+          <li>
+            ✓ Practicing advanced SQL queries and
+            analytical reporting.
+          </li>
+
+          <li>
+            ✓ Working on data cleaning, migration,
+            validation, and dashboard creation.
+          </li>
+
+          <li>
+            ✓ Developing portfolio projects using
+            Python, SQL, Excel, and MySQL.
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
     </main>
   );
 }
