@@ -521,6 +521,85 @@ export default function Home() {
 
   </div>
 </section>
+
+{/* Certifications Section */}
+<section className="py-24 px-10 bg-slate-100">
+  <div className="max-w-6xl mx-auto">
+
+    <p className="text-blue-600 font-medium">
+      Certifications
+    </p>
+
+    <h2 className="text-5xl font-bold text-slate-900 mt-4">
+      Certifications & Learning
+    </h2>
+
+    <div className="grid md:grid-cols-2 gap-8 mt-16">
+
+      <div className="bg-white p-8 rounded-xl shadow">
+        <h3 className="text-2xl font-bold">
+          Oracle Database 19c Administration
+        </h3>
+
+        <p className="mt-4 text-gray-700">
+          Learned Oracle database administration,
+          backup & recovery, RMAN, Data Pump,
+          monitoring, and database maintenance.
+        </p>
+      </div>
+
+      <div className="bg-white p-8 rounded-xl shadow">
+        <h3 className="text-2xl font-bold">
+          Oracle Apps DBA Concepts
+        </h3>
+
+        <p className="mt-4 text-gray-700">
+          Gained knowledge of Oracle E-Business Suite,
+          application architecture, patching,
+          cloning, and administration concepts.
+        </p>
+      </div>
+
+      <div className="bg-white p-8 rounded-xl shadow">
+        <h3 className="text-2xl font-bold">
+          Linux Administration for Oracle DBA
+        </h3>
+
+        <p className="mt-4 text-gray-700">
+          Worked with Linux commands, file systems,
+          user management, and server administration
+          required for Oracle environments.
+        </p>
+      </div>
+
+      <div className="bg-white p-8 rounded-xl shadow">
+        <h3 className="text-2xl font-bold">
+          Tata Data Analytics Virtual Experience
+        </h3>
+
+        <p className="mt-4 text-gray-700">
+          Completed data analysis tasks involving
+          business insights, reporting,
+          and analytical problem solving.
+        </p>
+      </div>
+
+      <div className="bg-white p-8 rounded-xl shadow md:col-span-2">
+        <h3 className="text-2xl font-bold">
+          UI/UX Design Certification
+        </h3>
+
+        <p className="mt-4 text-gray-700">
+          Learned user experience principles,
+          wireframing, design thinking,
+          and interface design fundamentals.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
     </main>
   );
 }
