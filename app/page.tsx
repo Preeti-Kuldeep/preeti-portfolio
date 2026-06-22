@@ -144,6 +144,119 @@ export default function Home() {
     </div>
   </div>
 </section>
+
+{/* Featured Project Section */}
+<section className="py-24 px-10 bg-slate-900 text-white">
+  <div className="max-w-6xl mx-auto">
+    <p className="text-blue-400 font-medium mb-4">
+      Featured Project
+    </p>
+
+    <h2 className="text-5xl font-bold mb-8">
+      Customer Churn Analysis &
+      Retention System
+    </h2>
+
+    <p className="text-xl text-gray-300 max-w-4xl leading-8">
+      Developed a data-driven customer churn analysis system
+      to identify customers at risk of leaving and provide
+      actionable business insights to improve retention
+      strategies and reduce revenue loss.
+    </p>
+
+    {/* Technology Tags */}
+    <div className="flex flex-wrap gap-3 mt-10">
+      <span className="bg-blue-600 px-4 py-2 rounded-full">
+        SQL
+      </span>
+
+      <span className="bg-blue-600 px-4 py-2 rounded-full">
+        Python
+      </span>
+
+      <span className="bg-blue-600 px-4 py-2 rounded-full">
+        Excel
+      </span>
+
+      <span className="bg-blue-600 px-4 py-2 rounded-full">
+        MySQL
+      </span>
+
+      <span className="bg-blue-600 px-4 py-2 rounded-full">
+        Pandas
+      </span>
+
+      <span className="bg-blue-600 px-4 py-2 rounded-full">
+        NumPy
+      </span>
+    </div>
+
+    {/* Project Grid */}
+    <div className="grid md:grid-cols-2 gap-8 mt-16">
+
+      <div className="bg-slate-800 p-8 rounded-xl">
+        <h3 className="text-2xl font-semibold mb-4">
+          Business Problem
+        </h3>
+
+        <p className="text-gray-300">
+          Businesses often lose customers due to poor
+          retention strategies, resulting in revenue loss
+          and reduced customer satisfaction.
+        </p>
+      </div>
+
+      <div className="bg-slate-800 p-8 rounded-xl">
+        <h3 className="text-2xl font-semibold mb-4">
+          Solution
+        </h3>
+
+        <p className="text-gray-300">
+          Built a customer churn analytics system that
+          analyzes customer behavior patterns and helps
+          identify customers likely to discontinue services.
+        </p>
+      </div>
+
+    </div>
+
+    {/* Key Highlights */}
+    <div className="mt-16">
+      <h3 className="text-3xl font-bold mb-8">
+        Key Highlights
+      </h3>
+
+      <div className="grid md:grid-cols-2 gap-4">
+
+        <div>✓ Data Cleaning</div>
+        <div>✓ Data Migration</div>
+        <div>✓ Data Validation</div>
+        <div>✓ SQL Query Analysis</div>
+        <div>✓ Dashboard Creation</div>
+        <div>✓ Customer Segmentation</div>
+        <div>✓ Churn Trend Analysis</div>
+        <div>✓ Business Insight Generation</div>
+
+      </div>
+    </div>
+
+    {/* Buttons */}
+    <div className="mt-12 flex gap-4">
+      <a
+        href="https://github.com/Preeti-Kuldeep"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-700"
+      >
+        GitHub
+      </a>
+
+      <button className="border border-white px-6 py-3 rounded-lg">
+        Documentation
+      </button>
+    </div>
+  </div>
+</section>
     </main>
   );
 }
