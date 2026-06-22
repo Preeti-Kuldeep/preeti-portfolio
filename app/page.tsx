@@ -436,6 +436,91 @@ export default function Home() {
 
   </div>
 </section>
+{/* Education Section */}
+<section className="py-24 px-10 bg-white">
+  <div className="max-w-6xl mx-auto">
+
+    <p className="text-blue-600 font-medium">
+      Education
+    </p>
+
+    <h2 className="text-5xl font-bold text-slate-900 mt-4">
+      Academic Journey
+    </h2>
+
+    <div className="mt-16 border-l-4 border-blue-600 pl-8">
+
+      <div className="mb-16">
+        <p className="text-blue-600 font-semibold">
+          2026 - 2028
+        </p>
+
+        <h3 className="text-3xl font-bold mt-2">
+          Master of Computer Applications (MCA)
+        </h3>
+
+        <p className="text-xl text-gray-600 mt-2">
+          Manipal University Jaipur
+        </p>
+
+        <p className="mt-4 text-gray-700">
+          Specializing in Computer Applications with
+          focus on Data Analytics, Databases,
+          Software Development, and Business Intelligence.
+        </p>
+      </div>
+
+      <div className="mb-16">
+        <p className="text-blue-600 font-semibold">
+          2022 - 2025
+        </p>
+
+        <h3 className="text-3xl font-bold mt-2">
+          Bachelor of Computer Applications (BCA)
+        </h3>
+
+        <p className="text-xl text-gray-600 mt-2">
+          KLS Gogte College of Commerce, Belagavi
+        </p>
+
+        <p className="mt-4 text-gray-700">
+          Built strong foundations in programming,
+          databases, software engineering, and computer science.
+        </p>
+      </div>
+
+      <div className="mb-16">
+        <p className="text-blue-600 font-semibold">
+          2020 - 2021
+        </p>
+
+        <h3 className="text-3xl font-bold mt-2">
+          PUC
+        </h3>
+
+        <p className="text-xl text-gray-600 mt-2">
+          Jain College of Science and Commerce
+        </p>
+      </div>
+
+      <div>
+        <p className="text-blue-600 font-semibold">
+          2019
+        </p>
+
+        <h3 className="text-3xl font-bold mt-2">
+          SSLC
+        </h3>
+
+        <p className="text-xl text-gray-600 mt-2">
+          Muktangana Vidyalaya English Medium School
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
     </main>
   );
 }
