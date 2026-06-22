@@ -600,6 +600,80 @@ export default function Home() {
 
   </div>
 </section>
+
+{/* Contact Section */}
+<section className="py-24 px-10 bg-slate-900 text-white">
+  <div className="max-w-6xl mx-auto text-center">
+
+    <p className="text-blue-400 font-medium">
+      Contact
+    </p>
+
+    <h2 className="text-5xl font-bold mt-4">
+      Let's Connect
+    </h2>
+
+    <p className="mt-6 text-xl text-gray-300 max-w-3xl mx-auto">
+      I'm always interested in discussing data analytics,
+      technology, projects, internships, and career
+      opportunities.
+    </p>
+
+    <div className="mt-12 space-y-4">
+
+      <p className="text-xl">
+        📧 preetikuldeep042@gmail.com
+      </p>
+
+      <p className="text-xl">
+        📞 +91 8618707724
+      </p>
+
+      <p className="text-xl">
+        📍 Belagavi, Karnataka, India
+      </p>
+
+    </div>
+
+    <div className="flex justify-center gap-6 mt-10">
+
+      <a
+        href="https://github.com/Preeti-Kuldeep"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-blue-600 px-6 py-3 rounded-lg"
+      >
+        GitHub
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/preeti-kuldeep-1919872a5/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="border border-white px-6 py-3 rounded-lg"
+      >
+        LinkedIn
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+{/* Footer */}
+<footer className="bg-black text-gray-400 py-8">
+  <div className="max-w-6xl mx-auto text-center">
+
+    <p>
+      © 2026 Preeti Kuldeep. All Rights Reserved.
+    </p>
+
+    <p className="mt-2">
+      Built with Next.js, TypeScript & Tailwind CSS
+    </p>
+
+  </div>
+</footer>
     </main>
   );
 }
