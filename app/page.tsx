@@ -1,15 +1,19 @@
 export default function Home() {
   return (
     <main>
-      {/* Hero Section */}
-      <section className="min-h-screen bg-slate-900 text-white">
-        {/* Navbar */}
-        <nav className="flex justify-between items-center px-10 py-6">
+
+      {/* Navbar */}
+        <nav className="fixed top-0 left-0 w-full bg-slate-900/90 backdrop-blur-md text-white flex justify-between items-center px-10 py-6 z-50">
           <h1 className="text-2xl font-bold">
             Preeti Kuldeep
           </h1>
 
           <div className="flex gap-6">
+
+            <a href="#home" className="hover:text-blue-400">
+              Home
+            </a>
+
             <a href="#about" className="hover:text-blue-400">
               About
             </a>
@@ -18,14 +22,25 @@ export default function Home() {
               Projects
             </a>
 
+            <a href="#experience" className="hover:text-blue-400">
+              Experience
+            </a>
+
             <a href="#contact" className="hover:text-blue-400">
               Contact
             </a>
           </div>
         </nav>
 
+      {/* Hero Section */}
+      <section 
+      id="home"
+      className="min-h-screen bg-slate-900 text-white"
+      >
+        
+
         {/* Hero Content */}
-        <div className="max-w-6xl mx-auto px-10 pt-24">
+        <div className="max-w-6xl mx-auto px-10 pt-40">
           <p className="text-blue-400 font-medium">
             Hello, I'm
           </p>
@@ -146,7 +161,10 @@ export default function Home() {
 </section>
 
 {/* Featured Project Section */}
-<section className="py-24 px-10 bg-slate-900 text-white">
+<section 
+id="projects"
+className="py-24 px-10 bg-slate-900 text-white"
+>
   <div className="max-w-6xl mx-auto">
     <p className="text-blue-400 font-medium mb-4">
       Featured Project
@@ -342,7 +360,8 @@ export default function Home() {
 </section>
 
 {/* Experience Section */}
-<section className="py-24 px-10 bg-slate-50">
+<section
+id="experience" className="py-24 px-10 bg-slate-50">
   <div className="max-w-6xl mx-auto">
 
     <p className="text-blue-600 font-medium">
@@ -602,7 +621,10 @@ export default function Home() {
 </section>
 
 {/* Contact Section */}
-<section className="py-24 px-10 bg-slate-900 text-white">
+<section 
+id="contact"
+className="py-24 px-10 bg-slate-900 text-white"
+>
   <div className="max-w-6xl mx-auto text-center">
 
     <p className="text-blue-400 font-medium">
