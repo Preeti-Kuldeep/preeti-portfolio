@@ -6,7 +6,7 @@ import {
   FaMapMarkerAlt,
   FaDownload
 } from "react-icons/fa";
-
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -150,7 +150,7 @@ export default function Home() {
     <div className="grid md:grid-cols-3 gap-8">
 
       <div className="bg-white p-8 rounded-xl shadow">
-        <h3 className="text-2xl font-semibold mb-4">
+        <h3 className="text-2xl font-bold text-slate-900 mb-4">
           📊 Data Analysis
         </h3>
 
@@ -162,7 +162,7 @@ export default function Home() {
       </div>
 
       <div className="bg-white p-8 rounded-xl shadow">
-        <h3 className="text-2xl font-semibold mb-4">
+        <h3 className="text-2xl font-bold text-slate-900 mb-4">
           🗄 Database
         </h3>
 
@@ -175,7 +175,7 @@ export default function Home() {
       </div>
 
       <div className="bg-white p-8 rounded-xl shadow">
-        <h3 className="text-2xl font-semibold mb-4">
+        <h3 className="text-2xl font-bold text-slate-900 mb-4">
           💻 Programming
         </h3>
 
@@ -196,8 +196,8 @@ id="projects"
 className="py-24 px-10 bg-slate-900 text-white"
 >
   <div className="max-w-6xl mx-auto">
-    <p className="text-blue-400 font-medium mb-4">
-      Featured Project
+    <p className="text-blue-400 font-medium mb-6">
+      Projects
     </p>
 
     <h2 className="text-5xl font-bold mb-8">
@@ -314,51 +314,74 @@ className="py-24 px-10 bg-slate-900 text-white"
 {/* ART HUB Project */}
 <section className="py-24 px-10 bg-white">
   <div className="max-w-6xl mx-auto">
-
-    <p className="text-blue-600 font-medium">
-      Project Showcase
-    </p>
-
+   
     <h2 className="text-5xl font-bold text-slate-900 mt-4">
       ART HUB
     </h2>
+    <p className="text-xl text-blue-600 font-medium mt-2">
+      Multi-Vendor Art Marketplace 
+    </p>
 
-    <p className="mt-8 text-xl text-gray-700 max-w-4xl">
-      A multi-user online marketplace platform that connects
-      artists, buyers, and shopkeepers through a centralized
-      system for artwork discovery, management, and purchasing.
+    <p className="mt-8 text-xl text-gray-700 leading-8">
+      Developed a full-stack multi-vendor art marketplace that 
+      enables artists to showcase artwork, buyers to discover and
+      purchase products, and sellers to manage listings through a centralized platform.
     </p>
 
     <div className="flex flex-wrap gap-3 mt-10">
-      <span className="bg-slate-200 px-4 py-2 rounded-full">
+      <span className="bg-blue-100 text-blue-700 px-4 py-2 rounded-full font-medium">
         Django
       </span>
 
-      <span className="bg-slate-200 px-4 py-2 rounded-full">
+      <span className="bg-blue-100 text-blue-700 px-4 py-2 rounded-full font-medium">
         MySQL
       </span>
 
-      <span className="bg-slate-200 px-4 py-2 rounded-full">
+      <span className="bg-blue-100 text-blue-700 px-4 py-2 rounded-full font-medium">
         HTML
       </span>
 
-      <span className="bg-slate-200 px-4 py-2 rounded-full">
+      <span className="bg-blue-100 text-blue-700 px-4 py-2 rounded-full font-medium">
         CSS
       </span>
 
-      <span className="bg-slate-200 px-4 py-2 rounded-full">
+      <span className="bg-blue-100 text-blue-700 px-4 py-2 rounded-full font-medium">
         JavaScript
       </span>
     </div>
 
+    <div className="grid md:grid-cols-4 gap-4 mt-2">
+
+  <div className="bg-white shadow rounded-xl p-4 text-center">
+    <h3 className="text-2xl font-bold text-blue-600">3</h3>
+    <p className="text-gray-600 font-medium">User Roles</p>
+  </div>
+
+  <div className="bg-white shadow rounded-xl p-4 text-center">
+    <h3 className="text-2xl font-bold text-blue-600">6+</h3>
+    <p className="text-gray-600 font-medium">Modules</p>
+  </div>
+
+  <div className="bg-white shadow rounded-xl p-4 text-center">
+    <h3 className="text-2xl font-bold text-blue-600">Cart</h3>
+    <p className="text-gray-600 font-medium">System</p>
+  </div>
+
+  <div className="bg-white shadow rounded-xl p-4 text-center">
+    <h3 className="text-2xl font-bold text-blue-600">Order</h3>
+    <p className="text-gray-600 font-medium">Tracking</p>
+  </div>
+
+</div>
+
     <div className="grid md:grid-cols-2 gap-8 mt-16">
 
-      <div className="bg-gray-100 p-8 rounded-xl">
-        <h3 className="text-2xl font-semibold mb-4">
-          Key Features
+      <div className="bg-gray-100 p-8 rounded-xl hover:shodow-xl hover:-translate-y-2 transition duration-300">
+        <h3 className="text-2xl font-bold text-slate-900">
+          Core Features
         </h3>
 
-        <ul className="space-y-2">
+        <ul className="space-y-2 text-gray-700">
           <li>✓ User Authentication</li>
           <li>✓ Product Listings</li>
           <li>✓ Shopping Cart</li>
@@ -368,12 +391,12 @@ className="py-24 px-10 bg-slate-900 text-white"
         </ul>
       </div>
 
-      <div className="bg-gray-100 p-8 rounded-xl">
-        <h3 className="text-2xl font-semibold mb-4">
-          Project Highlights
+      <div className="bg-gray-100 p-8 rounded-xl hover:shadow-xl hover:-translate-y-2 transition duration-300">
+        <h3 className="text-2xl font-bold text-slate-900">
+          Technical Implementation
         </h3>
 
-        <ul className="space-y-2">
+        <ul className="space-y-2 text-gray-700">
           <li>✓ Database Design</li>
           <li>✓ SQL Query Development</li>
           <li>✓ Backend Development</li>
@@ -386,10 +409,13 @@ className="py-24 px-10 bg-slate-900 text-white"
     </div>
 
     <div className="mt-12 flex gap-4">
-      <button className="bg-slate-900 text-white px-6 py-3 rounded-lg">
-        Screenshots Coming Soon
-      </button>
-    </div>
+  <Link
+    href="/art-hub"
+    className="bg-slate-900 text-white px-6 py-3 rounded-lg hover:bg-slate-700 transition"
+  >
+    Project Gallery
+  </Link>
+</div>
 
     {/* Buttons */}
     <div className="mt-12 flex gap-4">
@@ -401,7 +427,16 @@ className="py-24 px-10 bg-slate-900 text-white"
       >
         GitHub
       </a>
+
+      <a
+       href="#"
+       className="border border-blue-600 text-blue-600 px-5 py-2 rounded-lg hover:bg-blue-600 hover:text-white transition"
+>
+        Live Demo (Coming Soon)
+      </a>
     </div>
+
+    
 
   </div>
 </section>
@@ -426,7 +461,7 @@ id="experience" className="py-24 px-10 bg-slate-50">
           Dec 2025 - May 2026
         </p>
 
-        <h3 className="text-3xl font-bold mt-2">
+        <h3 className="text-black text-3xl font-bold mt-2">
           Oracle Apps DBA Trainee
         </h3>
 
@@ -461,43 +496,6 @@ id="experience" className="py-24 px-10 bg-slate-50">
           </li>
         </ul>
       </div>
-
-      <div>
-        <p className="text-blue-600 font-semibold">
-          2026 - Present
-        </p>
-
-        <h3 className="text-3xl font-bold mt-2">
-          Data Analytics Portfolio Projects
-        </h3>
-
-        <p className="text-xl text-gray-600 mt-2">
-          Self-Driven Learning & Project Development
-        </p>
-
-        <ul className="mt-6 space-y-3 text-gray-700">
-          <li>
-            ✓ Building Customer Churn Analysis &
-            Retention System.
-          </li>
-
-          <li>
-            ✓ Practicing advanced SQL queries and
-            analytical reporting.
-          </li>
-
-          <li>
-            ✓ Working on data cleaning, migration,
-            validation, and dashboard creation.
-          </li>
-
-          <li>
-            ✓ Developing portfolio projects using
-            Python, SQL, Excel, and MySQL.
-          </li>
-        </ul>
-      </div>
-
     </div>
 
   </div>
@@ -521,7 +519,7 @@ id="experience" className="py-24 px-10 bg-slate-50">
           2026 - 2028
         </p>
 
-        <h3 className="text-3xl font-bold mt-2">
+        <h3 className="text-3xl text-gray-600 font-bold mt-2">
           Master of Computer Applications (MCA)
         </h3>
 
@@ -541,7 +539,7 @@ id="experience" className="py-24 px-10 bg-slate-50">
           2022 - 2025
         </p>
 
-        <h3 className="text-3xl font-bold mt-2">
+        <h3 className="text-3xl text-gray-600 font-bold mt-2">
           Bachelor of Computer Applications (BCA)
         </h3>
 
@@ -560,7 +558,7 @@ id="experience" className="py-24 px-10 bg-slate-50">
           2020 - 2021
         </p>
 
-        <h3 className="text-3xl font-bold mt-2">
+        <h3 className="text-3xl text-gray-600 font-bold mt-2">
           PUC
         </h3>
 
@@ -574,7 +572,7 @@ id="experience" className="py-24 px-10 bg-slate-50">
           2019
         </p>
 
-        <h3 className="text-3xl font-bold mt-2">
+        <h3 className="text-3xl text-gray-600 font-bold mt-2">
           SSLC
         </h3>
 
@@ -603,7 +601,7 @@ id="experience" className="py-24 px-10 bg-slate-50">
     <div className="grid md:grid-cols-2 gap-8 mt-16">
 
       <div className="bg-white p-8 rounded-xl shadow">
-        <h3 className="text-2xl font-bold">
+        <h3 className="text-2xl text-gray-700 font-bold">
           Oracle Database 19c Administration
         </h3>
 
@@ -615,7 +613,7 @@ id="experience" className="py-24 px-10 bg-slate-50">
       </div>
 
       <div className="bg-white p-8 rounded-xl shadow">
-        <h3 className="text-2xl font-bold">
+        <h3 className="text-2xl text-gray-700 font-bold">
           Oracle Apps DBA Concepts
         </h3>
 
@@ -627,7 +625,7 @@ id="experience" className="py-24 px-10 bg-slate-50">
       </div>
 
       <div className="bg-white p-8 rounded-xl shadow">
-        <h3 className="text-2xl font-bold">
+        <h3 className="text-2xl text-gray-700 font-bold">
           Linux Administration for Oracle DBA
         </h3>
 
@@ -639,7 +637,7 @@ id="experience" className="py-24 px-10 bg-slate-50">
       </div>
 
       <div className="bg-white p-8 rounded-xl shadow">
-        <h3 className="text-2xl font-bold">
+        <h3 className="text-2xl text-gray-700 font-bold">
           Tata Data Analytics Virtual Experience
         </h3>
 
@@ -651,7 +649,7 @@ id="experience" className="py-24 px-10 bg-slate-50">
       </div>
 
       <div className="bg-white p-8 rounded-xl shadow md:col-span-2">
-        <h3 className="text-2xl font-bold">
+        <h3 className="text-2xl text-gray-700 font-bold">
           UI/UX Design Certification
         </h3>
 
