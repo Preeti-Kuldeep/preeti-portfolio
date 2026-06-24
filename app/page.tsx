@@ -291,7 +291,7 @@ className="py-24 px-10 bg-slate-900 text-white"
     {/* Buttons */}
     <div className="mt-12 flex gap-4">
       <a
-        href="https://github.com/Preeti-Kuldeep"
+        href="https://github.com/Preeti-Kuldeep/Customer-Churn-Analysis-Retention-System"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-700"
@@ -299,9 +299,14 @@ className="py-24 px-10 bg-slate-900 text-white"
         GitHub
       </a>
 
-      <button className="border border-white px-6 py-3 rounded-lg">
+      <a
+      href="https://github.com/Preeti-Kuldeep/Customer-Churn-Analysis-Retention-System/tree/main/Documentation"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="border border-white px-6 py-3 rounded-lg "
+      >
         Documentation
-      </button>
+      </a>
     </div>
   </div>
 </section>
@@ -384,6 +389,18 @@ className="py-24 px-10 bg-slate-900 text-white"
       <button className="bg-slate-900 text-white px-6 py-3 rounded-lg">
         Screenshots Coming Soon
       </button>
+    </div>
+
+    {/* Buttons */}
+    <div className="mt-12 flex gap-4">
+      <a
+        href="https://github.com/Preeti-Kuldeep/ART-HUB"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-700"
+      >
+        GitHub
+      </a>
     </div>
 
   </div>
