@@ -1,3 +1,11 @@
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaPhone,
+  FaMapMarkerAlt
+} from "react-icons/fa";
+
 export default function Home() {
   return (
     <main>
@@ -64,7 +72,11 @@ export default function Home() {
               rel="noopener noreferrer"
               className="bg-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-700"
             >
-              GitHub
+              <div className="flex items-center gap-2">
+                <FaGithub />
+                GitHub
+              </div>
+
             </a>
 
             <a
@@ -73,7 +85,11 @@ export default function Home() {
               rel="noopener noreferrer"
               className="border border-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-slate-900"
             >
-              LinkedIn
+              <div className="flex items-center gap-2">
+                <FaLinkedin />
+                LinkedIn
+              </div>
+
             </a>
           </div>
         </div>
@@ -643,16 +659,19 @@ className="py-24 px-10 bg-slate-900 text-white"
 
     <div className="mt-12 space-y-4">
 
-      <p className="text-xl">
-        📧 preetikuldeep042@gmail.com
+      <p className="text-xl flex items-center justify-center gap-3">
+        <FaEnvelope />
+        preetikuldeep042@gmail.com
       </p>
 
-      <p className="text-xl">
-        📞 +91 8618707724
+      <p className="text-xl flex items-center justify-center gap-3">
+       <FaPhone />
+        +91 xxxxxxxxxx
       </p>
 
-      <p className="text-xl">
-        📍 Belagavi, Karnataka, India
+      <p className="text-xl flex items-center justify-center gap-3">
+        <FaMapMarkerAlt />
+        Belagavi, Karnataka, India
       </p>
 
     </div>
@@ -665,7 +684,10 @@ className="py-24 px-10 bg-slate-900 text-white"
         rel="noopener noreferrer"
         className="bg-blue-600 px-6 py-3 rounded-lg"
       >
-        GitHub
+        <div className="flex items-center gap-2">
+          <FaGithub />
+           GitHub
+        </div>
       </a>
 
       <a
@@ -674,7 +696,10 @@ className="py-24 px-10 bg-slate-900 text-white"
         rel="noopener noreferrer"
         className="border border-white px-6 py-3 rounded-lg"
       >
-        LinkedIn
+        <div className="flex items-center gap-2">
+          <FaLinkedin />
+          LinkedIn
+        </div>
       </a>
 
     </div>
