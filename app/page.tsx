@@ -3,8 +3,10 @@ import {
   FaLinkedin,
   FaEnvelope,
   FaPhone,
-  FaMapMarkerAlt
+  FaMapMarkerAlt,
+  FaDownload
 } from "react-icons/fa";
+
 
 export default function Home() {
   return (
@@ -37,6 +39,7 @@ export default function Home() {
             <a href="#contact" className="hover:text-blue-400">
               Contact
             </a>
+
           </div>
         </nav>
 
@@ -90,6 +93,17 @@ export default function Home() {
                 LinkedIn
               </div>
 
+            </a>
+            <a
+              href="/Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-700"
+            >
+              <div className="flex items-center gap-2">
+               <FaDownload />
+                Resume
+              </div>
             </a>
           </div>
         </div>
