@@ -1,133 +1,124 @@
+import Link from "next/link";
+
 export default function ArtHubGallery() {
   return (
     <div className="max-w-7xl mx-auto px-10 py-20">
 
-      <h1 className="text-5xl font-bold mb-4">
+      {/* Back Button */}
+      <Link
+        href="/"
+        className="text-blue-600 font-medium hover:underline"
+      >
+        ← Back to Portfolio
+      </Link>
+
+      {/* Heading */}
+      <h1 className="text-5xl font-bold mt-8">
         ART HUB
       </h1>
 
-      <p className="text-lg text-gray-400 mb-12">
+      <p className="text-lg text-gray-300 mt-4">
         Complete project showcase and application walkthrough.
       </p>
 
-      <div className="grid md:grid-cols-2 gap-10">
+      {/* Gallery */}
+      <div className="grid md:grid-cols-2 gap-10 mt-12">
 
         {/* Homepage */}
-        <div className="bg-white rounded-xl p-5 shadow-lg">
-          <h3 className="text-2xl text-black font-bold mb-2">
-            Homepage
-          </h3>
-
+        <div className="bg-white rounded-xl shadow-lg p-5">
+          <h2 className="text-2xl font-bold mb-2 text-black">Homepage</h2>
           <p className="text-gray-600 mb-4">
-            Landing page showcasing featured artworks and product discovery.
+            Browse featured artworks and discover paintings from different artists.
           </p>
 
           <img
             src="/images/arthub-homepage.jpeg"
             alt="Homepage"
-            className="h-72 w-full object-cover rounded-lg hover:scale-105 transition duration-300"
+            className="w-full h-72 object-cover rounded-lg hover:scale-105 transition duration-300"
           />
         </div>
 
         {/* Login */}
-        <div className="bg-white rounded-xl p-5 shadow-lg">
-          <h3 className="text-2xl text-black font-bold mb-2">
-            User Login
-          </h3>
-
+        <div className="bg-white rounded-xl shadow-lg p-5">
+          <h2 className="text-2xl font-bold mb-2 text-black">User Login</h2>
           <p className="text-gray-600 mb-4">
-            Secure authentication system for buyers and sellers.
+            Secure login for buyers and sellers.
           </p>
 
           <img
             src="/images/arthub-login.png"
-            alt="Login Page"
-            className="h-72 w-full object-cover rounded-lg hover:scale-105 transition duration-300"
+            alt="Login"
+            className="w-full h-72 object-cover rounded-lg hover:scale-105 transition duration-300"
           />
         </div>
 
         {/* Product Details */}
-        <div className="bg-white rounded-xl p-5 shadow-lg">
-          <h3 className="text-2xl text-black font-bold mb-2">
-            Product Details
-          </h3>
-
+        <div className="bg-white rounded-xl shadow-lg p-5">
+          <h2 className="text-2xl font-bold mb-2 text-black">Product Details</h2>
           <p className="text-gray-600 mb-4">
-            Detailed artwork information with pricing and purchase options.
+            View artwork details, pricing and product information.
           </p>
 
           <img
             src="/images/arthub-product.jpeg"
-            alt="Product Page"
-            className="h-72 w-full object-cover rounded-lg hover:scale-105 transition duration-300"
+            alt="Product Details"
+            className="w-full h-72 object-cover rounded-lg hover:scale-105 transition duration-300"
           />
         </div>
 
-        {/* Seller Profile */}
-        <div className="bg-white rounded-xl p-5 shadow-lg">
-          <h3 className="text-2xl text-black font-bold mb-2">
-            Seller Dashboard
-          </h3>
-
+        {/* Seller Dashboard */}
+        <div className="bg-white rounded-xl shadow-lg p-5">
+          <h2 className="text-2xl font-bold mb-2 text-black">Seller Dashboard</h2>
           <p className="text-gray-600 mb-4">
-            Manage artwork listings, profiles, and inventory.
+            Manage artworks, profile and product listings.
           </p>
 
           <img
             src="/images/arthub-sellerprofile.jpeg"
-            alt="Seller Profile"
-            className="h-72 w-full object-cover rounded-lg hover:scale-105 transition duration-300"
+            alt="Seller Dashboard"
+            className="w-full h-72 object-cover rounded-lg hover:scale-105 transition duration-300"
           />
         </div>
 
-        {/* Cart */}
-        <div className="bg-white rounded-xl p-5 shadow-lg">
-          <h3 className="text-2xl text-black font-bold mb-2">
-            Shopping Cart
-          </h3>
-
+        {/* Shopping Cart */}
+        <div className="bg-white rounded-xl shadow-lg p-5">
+          <h2 className="text-2xl font-bold mb-2 text-black">Shopping Cart</h2>
           <p className="text-gray-600 mb-4">
             Review selected products before placing an order.
           </p>
 
           <img
             src="/images/arthub-cart.png"
-            alt="Cart Page"
-            className="h-72 w-full object-cover rounded-lg hover:scale-105 transition duration-300"
+            alt="Shopping Cart"
+            className="w-full h-72 object-cover rounded-lg hover:scale-105 transition duration-300"
           />
         </div>
 
         {/* Order History */}
-        <div className="bg-white rounded-xl p-5 shadow-lg">
-          <h3 className="text-2xl text-black font-bold mb-2">
-            Order History
-          </h3>
-
+        <div className="bg-white rounded-xl shadow-lg p-5">
+          <h2 className="text-2xl font-bold mb-2 text-black">Order History</h2>
           <p className="text-gray-600 mb-4">
-            Track previous purchases and delivery details.
+            View previously purchased artworks and order details.
           </p>
 
           <img
             src="/images/arthub-History.png"
             alt="Order History"
-            className="h-72 w-full object-cover rounded-lg hover:scale-105 transition duration-300"
+            className="w-full h-72 object-cover rounded-lg hover:scale-105 transition duration-300"
           />
         </div>
 
         {/* Checkout */}
-        <div className="bg-white rounded-xl p-5 shadow-lg md:col-span-2">
-          <h3 className="text-2xl text-black font-bold mb-2">
-            Checkout & Shipping
-          </h3>
-
+        <div className="bg-white rounded-xl shadow-lg p-5 md:col-span-2">
+          <h2 className="text-2xl font-bold mb-2 text-black">Checkout & Shipping</h2>
           <p className="text-gray-600 mb-4">
-            Complete purchase process with shipping and order confirmation.
+            Complete the purchase process with shipping details and order confirmation.
           </p>
 
           <img
             src="/images/arthub-Buynow.jpeg"
-            alt="Buy Now"
-            className="h-96 w-full object-cover rounded-lg hover:scale-105 transition duration-300"
+            alt="Checkout"
+            className="w-full h-110 object-cover rounded-lg hover:scale-103 transition duration-300"
           />
         </div>
 

@@ -1,3 +1,5 @@
+
+"use client";
 import {
   FaGithub,
   FaLinkedin,
@@ -8,7 +10,34 @@ import {
 } from "react-icons/fa";
 import Link from "next/link";
 
+import {useState,useEffect} from "react";
+
 export default function Home() {
+
+  const [activeSection, setActiveSection] = useState("home");
+  useEffect(() => {
+  const sections = document.querySelectorAll("section[id]");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    },
+    {
+      threshold: 0.5,
+    }
+  );
+
+  sections.forEach((section) => observer.observe(section));
+
+  return () => {
+    sections.forEach((section) => observer.unobserve(section));
+  };
+}, []);
+
   return (
     <main>
 
@@ -20,23 +49,58 @@ export default function Home() {
 
           <div className="flex gap-6">
 
-            <a href="#home" className="hover:text-blue-400">
+            <a
+                href="#home"
+                className={`${
+                activeSection === "home"
+                ? "text-blue-400 font-semibold"
+                : "text-white"
+            } hover:text-blue-400 transition-colors duration-300`}
+           >
               Home
+           </a>
+
+            <a
+              href="#about"
+              className={`${
+              activeSection === "about"
+              ? "text-blue-400 font-semibold"
+              : "text-white"
+              } hover:text-blue-400 transition-colors duration-300`}
+            >
+             About
             </a>
 
-            <a href="#about" className="hover:text-blue-400">
-              About
-            </a>
-
-            <a href="#projects" className="hover:text-blue-400">
+            <a
+              href="#projects"
+              className={`${
+                activeSection === "projects"
+                  ? "text-blue-400 font-semibold"
+                  : "text-white"
+              } hover:text-blue-400 transition-colors duration-300`}
+            >
               Projects
             </a>
 
-            <a href="#experience" className="hover:text-blue-400">
-              Experience
+            <a
+              href="#education"
+              className={`${
+                activeSection === "education"
+                  ? "text-blue-400 font-semibold"
+                  : "text-white"
+              } hover:text-blue-400 transition-colors duration-300`}
+            >
+              Career
             </a>
 
-            <a href="#contact" className="hover:text-blue-400">
+            <a
+              href="#contact"
+              className={`${
+                activeSection === "contact"
+                  ? "text-blue-400 font-semibold"
+                  : "text-white"
+              } hover:text-blue-400 transition-colors duration-300`}
+            >
               Contact
             </a>
 
@@ -303,7 +367,7 @@ className="py-24 px-10 bg-slate-900 text-white"
       href="https://github.com/Preeti-Kuldeep/Customer-Churn-Analysis-Retention-System/tree/main/Documentation"
       target="_blank"
       rel="noopener noreferrer"
-      className="border border-white px-6 py-3 rounded-lg "
+      className="border border-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-slate-900 "
       >
         Documentation
       </a>
@@ -443,8 +507,9 @@ className="py-24 px-10 bg-slate-900 text-white"
 
 {/* Experience Section */}
 <section
-id="experience" className="py-24 px-10 bg-slate-50">
-  <div className="max-w-6xl mx-auto">
+  id="education"
+  className="py-24 px-10 bg-white"
+>
 
     <p className="text-blue-600 font-medium">
       Professional Experience
@@ -498,12 +563,14 @@ id="experience" className="py-24 px-10 bg-slate-50">
       </div>
     </div>
 
-  </div>
+  
 </section>
-{/* Education Section */}
-<section className="py-24 px-10 bg-white">
-  <div className="max-w-6xl mx-auto">
 
+{/* Education Section */}
+<section
+  id="education"
+  className="py-24 px-10 bg-white"
+>
     <p className="text-blue-600 font-medium">
       Education
     </p>
@@ -583,7 +650,7 @@ id="experience" className="py-24 px-10 bg-slate-50">
 
     </div>
 
-  </div>
+  
 </section>
 
 {/* Certifications Section */}
@@ -695,7 +762,7 @@ className="py-24 px-10 bg-slate-900 text-white"
 
       <p className="text-xl flex items-center justify-center gap-3">
        <FaPhone />
-        +91 xxxxxxxxxx
+        +91 8618707724
       </p>
 
       <p className="text-xl flex items-center justify-center gap-3">
@@ -711,7 +778,7 @@ className="py-24 px-10 bg-slate-900 text-white"
         href="https://github.com/Preeti-Kuldeep"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-blue-600 px-6 py-3 rounded-lg"
+        className="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700"
       >
         <div className="flex items-center gap-2">
           <FaGithub />
@@ -723,9 +790,9 @@ className="py-24 px-10 bg-slate-900 text-white"
         href="https://www.linkedin.com/in/preeti-kuldeep-1919872a5/"
         target="_blank"
         rel="noopener noreferrer"
-        className="border border-white px-6 py-3 rounded-lg"
+        className="border border-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-slate-900"
       >
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 ">
           <FaLinkedin />
           LinkedIn
         </div>
