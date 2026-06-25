@@ -1,4 +1,3 @@
-
 "use client";
 import {
   FaGithub,
@@ -12,9 +11,12 @@ import Link from "next/link";
 
 import {useState,useEffect} from "react";
 
+import{ FaBars, FaTimes} from "react-icons/fa";
+
 export default function Home() {
 
   const [activeSection, setActiveSection] = useState("home");
+  const[menuOpen, setMenuOpen]=useState(false);
   useEffect(() => {
   const sections = document.querySelectorAll("section[id]");
 
@@ -47,7 +49,7 @@ export default function Home() {
             Preeti Kuldeep
           </h1>
 
-          <div className="flex gap-6">
+          <div className="hidden md:flex gap-6 items-center"> 
 
             <a
                 href="#home"
@@ -105,7 +107,96 @@ export default function Home() {
             </a>
 
           </div>
+
+          {/* Mobile Menu Button */}
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="md:hidden text-2xl"
+        >
+              {menuOpen ? <FaTimes /> : <FaBars />}
+            </button>
+
         </nav>
+
+        {/* Mobile Navigation Menu */}
+<div
+  className={`fixed top-0 right-0 h-full w-64 bg-slate-900 text-white transform transition-transform duration-300 z-40 ${
+    menuOpen ? "translate-x-0" : "translate-x-full"
+  } md:hidden`}
+>
+  <div className="flex flex-col mt-24 px-8 gap-10">
+
+    <a
+      href="#home"
+      onClick={() => setMenuOpen(false)}
+      className={`text-lg py-3 px-4 rounded-lg transition ${
+      activeSection === "home"
+      ? "text-blue-400 font-semibold"
+      : "text-white hover:text-blue-400"
+      }`}
+    >
+      🏠 Home
+    </a>
+
+    <a 
+    href="#about"
+    onClick={()=>setMenuOpen(false)}
+    className={`text-lg py-3 px-4 rounded-lg transition ${
+      activeSection === "about"
+        ? "text-blue-400 font-semibold"
+        : "text-white hover:text-blue-400"
+    }`}
+    >
+      👤 About
+    </a>
+
+    <a 
+    href="#projects"
+    onClick={()=>setMenuOpen(false)}
+    className={`text-lg py-3 px-4 rounded-lg transition ${
+      activeSection === "projects"
+        ? "text-blue-400 font-semibold"
+        : "text-white hover:text-blue-400"
+    }`}
+    >
+      📁 Projects
+    </a>
+
+    <a 
+    href="#education"
+    onClick={()=>setMenuOpen(false)}
+    className={`text-lg py-3 px-4 rounded-lg transition ${
+      activeSection === "education"
+        ? "text-blue-400 font-semibold"
+        : "text-white hover:text-blue-400"
+    }`}
+    >
+      🎓 Career
+    </a>
+
+    <a 
+    href="#contact"
+    onClick={()=>setMenuOpen(false)}
+    className={`text-lg py-3 px-4 rounded-lg transition ${
+      activeSection === "contact"
+        ? "text-blue-400 font-semibold"
+        : "text-white hover:text-blue-400"
+    }`}
+    >
+      📞 Contact
+    </a>
+
+    <a href="/Resume.pdf" target="_blank" onClick={()=>setMenuOpen(false)} 
+    className={`text-lg py-3 px-4 rounded-lg transition ${
+      activeSection === "resume"
+        ? "text-blue-400 font-semibold"
+        : "text-white hover:text-blue-400"
+    }`}>
+       📄 Resume
+    </a>
+
+  </div>
+</div>
 
       {/* Hero Section */}
       <section 
